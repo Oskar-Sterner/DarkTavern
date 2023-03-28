@@ -1,0 +1,8 @@
+@use "variables" as var;
+
+@mixin button {
+    width: 80px;
+    height: 35px;
+    background: var.$secondary;
+    border-radius: 10px;
+}

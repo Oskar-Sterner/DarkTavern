@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkTavern</title>
+    <script src="https://kit.fontawesome.com/ff088c1af2.js" crossorigin="anonymous"></script>
+    <script src="js/particles.js/particles.js" defer></script>
+    <script src="js/particles.js/app.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="js/scrollReveal/app.js" defer></script>
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <section id="item1">
+        <nav class="navbar">
+            <h1>DarkTavern</h1>
+            <a href="#">LOGIN</a>
+        </nav>
+        <div class="hero">
+            <img src="assets/darktavern.png" alt="Logo">
+            <form onsubmit="event.preventDefault();">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" placeholder="Username..."></input>
+            </form>
+            <ul class="shortcuts">
+                <li><a>TRADING</a></li>
+                <li><a>FORUM</a></li>
+                <li><a>GUIDES</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="item2">
+        <div id="about">
+            <h1>WHAT <span>DO</span> WE OFFER<span>?</span></h1>
+            <ul class="about-cards">
+                <li id="trade">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <p>
+                        Our platform streamlines trading for players with a clear, user-friendly interface that optimizes the trading process for more successful outcomes.
+                    </p>
+                </li>
+                <li id="guides">
+                    <i class="fa-solid fa-question"></i>
+                    <p>
+                        Our platform provides a straightforward method for novice players to enter the game and grasp its fundamentals through an intuitive and accessible interface.
+                    </p>
+                </li>
+                <li id="giveaway">
+                    <i class="fa-solid fa-trophy"></i>
+                    <p>
+                        We provide giveaways to our users as a token of appreciation for utilizing our services, including in-game loot and Steam gift cards.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="item3">
+        <div class="discord">
+            <h1 id="join-dc">JOIN OUR <span>DISCORD</span></h1>
+            <iframe id="iframe-dc" src="https://discord.com/widget?id=745027214009172120&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+    </section>
+
+    <section id="item4">
+        <footer><p>DESIGNED AND DEVELOPED BY <a href="https://osody.se"><span>OSODY STUDIOS</span></a></p></footer>
+    </section>
+</body>
+</html>
