@@ -106,6 +106,9 @@ html, body{
             justify-content: center;
             justify-content: space-between;
             width: 80%;
+            @include mix.desktop{
+                width: 450px!important;
+            }
             a{
                 display: flex;
                 @include mix.button;
@@ -118,6 +121,9 @@ html, body{
         form{
             width: 80%;
             display: flex;
+            @include mix.desktop{
+                width: 450px!important;
+            }
             input[type="text"]{
                 padding: 7px 2px;
                 padding-inline-start: 10px;
@@ -132,6 +138,9 @@ html, body{
             i{
                 position: absolute;
                 right: 13%;
+                @include mix.desktop{
+                    right:37%;
+                }
                 margin-top: 8.5px;
             }
         }
