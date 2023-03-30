@@ -2,13 +2,26 @@
 
 @mixin button {
     width: 80px;
+    transform: scale(1);
+    transition: 300ms;
     height: 35px;
     background: var.$secondary;
     border-radius: 10px;
+    &:hover{
+        background-color: var.$button-hover;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
 }
 
 @mixin desktop {
     @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin thinner-mobile {
+    @media screen and (max-width: 420px) {
         @content;
     }
 }

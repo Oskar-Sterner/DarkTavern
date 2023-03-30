@@ -96,6 +96,9 @@ html, body{
         align-items: center;
         transform: translate(0%, 22dvh);
         position: relative;
+        @include mix.thinner-mobile{
+            transform: translate(0%, 19dvh);
+        }
         img{
             width: 300px;
             margin: -40px -10px -70px -10px;
@@ -109,13 +112,26 @@ html, body{
             @include mix.desktop{
                 width: 450px!important;
             }
-            a{
-                display: flex;
-                @include mix.button;
-                width: 100px!important;
-                line-height: 35px;
-                font-size: 20px;
-                justify-content: center;
+            @include mix.thinner-mobile{
+                flex-direction: column;
+                align-items: center;
+            }
+            li{
+                @include mix.thinner-mobile{
+                    width: 100%!important;
+                    margin-bottom: 15px;
+                }
+                a{
+                    display: flex;
+                    @include mix.button;
+                    width: 100px!important;
+                    line-height: 35px;
+                    font-size: 20px;
+                    justify-content: center;
+                    @include mix.thinner-mobile{
+                        width: 100%!important;
+                    }
+                }
             }
         }
         form{
@@ -150,7 +166,7 @@ html, body{
 #item2{
     position: relative;
     z-index: 3;
-    height: calc(100%);
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,6 +183,7 @@ html, body{
             align-items: center;
             overflow: hidden!important;
             row-gap: 40px;
+            margin-bottom: 40px;
             li{
                 display: flex;
                 flex-direction: column;
@@ -209,7 +226,15 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     .discord{
+        @include mix.thinner-mobile{
+            width: 100%!important;
+        }
         margin-block-end: 30px;
+        @include mix.thinner-mobile{
+            iframe{
+                width: 80%!important;
+            }
+        }
     }
 }
 
@@ -218,12 +243,18 @@ html, body{
     z-index: 3;
     height: 20px;
     background-color: var.$primary;
+    @include mix.thinner-mobile{
+        line-height: 20px;
+    }
     footer{
         display: flex;
         justify-content: center;
         overflow: hidden!important;
         p{
             margin: 0;
+            @include mix.thinner-mobile{
+                font-size: 12px;
+            }
         }
     }
 }
