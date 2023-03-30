@@ -27,3 +27,6 @@ To get started with DarkTavern, simply visit our website and create an account. 
 ## Conclusion 👌
 
 At DarkTavern, we are dedicated to providing our users with an exceptional gaming experience. We strive to make our platform accessible and user-friendly, so that players of all skill levels can enjoy our services. If you have any questions or concerns, please don't hesitate to contact us through our website. We're always happy to help and want to make sure that your experience with DarkTavern is as enjoyable as possible. Thank you for choosing DarkTavern!
+
+## Link 🔗
+Here's the current link to the live project: https://osody.se/darktavern/ it may change in the future :)
